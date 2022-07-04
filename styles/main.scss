@@ -1,0 +1,15 @@
+//utilities
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/responsive";
+
+//reset
+@import "./base/reset";
+
+//block
+@import "./block/navbar";
+@import "./block/section1";
+@import "./block/section2";
+@import "./block/gallery";
+@import "./block/footer";
+@import "./block/form";

@@ -1,0 +1,113 @@
+body {
+  background-color: $grey;
+}
+.container {
+  @include flexCenter(column, center, center);
+}
+
+.title {
+  color: $secundary;
+  font-size: $h1;
+  margin: 4rem 0;
+  border-bottom: 2px solid $primary;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  min-width: 40%;
+
+  &__label {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: $secundary;
+  }
+
+  &__input {
+    padding: 0.6rem 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: $primary;
+    font-size: $labels;
+
+    &:focus {
+      outline: none;
+      border: 3px solid $primary;
+    }
+
+    &::placeholder {
+      color: rgba(128, 128, 128, 0.605);
+    }
+  }
+
+  &__select {
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: $primary;
+    font-size: $labels;
+  }
+
+  &__checkbox {
+    appearance: none;
+    background-color: $secundary;
+    border: 1px solid $secundary;
+    padding: 0.7rem;
+    border-radius: 4px;
+    position: relative;
+    margin-left: 0.8rem;
+
+    &:checked {
+      background-color: $primary;
+
+      &::after {
+        display: block;
+        content: "\2714";
+        color: $grey;
+        position: absolute;
+        top: 2px;
+        left: 6px;
+      }
+    }
+  }
+
+  &__textarea {
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    border: 2px solid $secundary;
+    font-size: $labels;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__btn {
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem 2rem;
+    margin: 3rem auto;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &--submit {
+      background-color: $primary;
+      color: $secundary;
+    }
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 0.8rem 0 0;
+}

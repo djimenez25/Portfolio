@@ -1,0 +1,122 @@
+.skills {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $grey;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  padding: 1.4rem 0;
+}
+
+.heading h1 {
+  color: $secundary;
+  font-size: $h1;
+  font-weight: 600;
+  border-bottom: 2px solid $primary;
+}
+
+.skills-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-img {
+  width: 500px;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+.skills-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+
+  @include tablet {
+    width: 300px;
+    height: 200px;
+    margin-top: 6rem;
+  }
+}
+
+.skills-bars {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  justify-content: space-between;
+  max-width: 500px;
+
+  @include tablet {
+    max-width: 420px;
+  }
+}
+
+.skills-box {
+  position: relative;
+  background: #2c3c54;
+  margin: 1rem 0;
+  height: 3.4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.skills-box i {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: $primary;
+}
+
+.skills-box h3 {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.skills-box span {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $secundary;
+}
+
+.percent-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: $primary;
+  height: 0.3rem;
+  border-radius: 5px;
+}
+
+.html-bar {
+  width: 65%;
+}
+
+.css-bar {
+  width: 60%;
+}
+
+.js-bar {
+  width: 50%;
+}
+
+.learning-bar {
+  width: 90%;
+}
+
+.team-bar {
+  width: 85%;
+}
+
+.motivation-bar {
+  width: 95%;
+}
