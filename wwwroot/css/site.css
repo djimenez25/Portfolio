@@ -20,3 +20,102 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Estilo para la barra de navegación */
+.navbar-custom {
+    background-color: #333; /* Gris oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    transition: background-color 0.3s ease;
+}
+
+    .navbar-custom .navbar-brand {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: color 0.3s ease;
+    }
+
+        .navbar-custom .navbar-brand:hover {
+            color: #ffcc00; /* Color dorado en hover */
+        }
+
+    .navbar-custom .nav-link {
+        color: #fff !important;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-right: 1rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+        .navbar-custom .nav-link:hover {
+            color: #ffcc00 !important;
+            transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+        }
+
+    .navbar-custom .nav-item.active .nav-link {
+        font-weight: bold;
+        color: #ffcc00 !important;
+    }
+
+    .navbar-custom .nav-item.active .nav-link {
+        border-bottom: 2px solid #ffcc00;
+    }
+
+/* Centrado de los elementos de la barra de navegación */
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo del botón "Ver mi CV" */
+.btn-cv {
+    background-color: #444; /* Gris más claro para el botón */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-cv:hover {
+        background-color: #555; /* Gris más oscuro en hover */
+        transform: scale(1.05); /* Efecto de escala en el hover */
+    }
+
+/* Efecto de sombra en el menú */
+.navbar-custom:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Cambiar el color de la barra en scroll */
+.navbar-custom.scroll {
+    background: rgba(51, 51, 51, 0.9); /* Desaparece el fondo opaco */
+}
+
+/* Ajustes para mejorar la experiencia en dispositivos pequeños */
+@media (max-width: 767px) {
+    .navbar-custom .nav-link {
+        font-size: 1rem;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .navbar-custom .nav-item {
+        padding: 0.5rem 0;
+    }
+}
